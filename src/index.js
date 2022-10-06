@@ -7,8 +7,7 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Navbar from './components/navbar/Navbar';
 import Blog from './pages/Blog';
-
-
+import Products from './pages/Products';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +19,7 @@ root.render(
         <Route exact path='/' element={<App />} />
         <Route path='/home' element={<Home />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/products' element={<Products />} />
 
         <Route path='*' element={<NotFound notfound={"notfound"} />} />
 
